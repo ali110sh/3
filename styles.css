@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 30px;
+}
+.fa{
+    padding: 20px;
+}
+.menu__link{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+.card{
+    width: 23%;
+    margin-top: 150px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    text-align: center;
+    letter-spacing: .05em;
+    align-itemS:   center;
+}
+.img {
+    width: 95%;
+    height: auto;
+    box-sizing: border-box;
+    justify-content:center;
+}
+h2 {
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+    color: gray;
+}
+.under-link{
+    display: flex;
+    justify-content: center;
+    padding: 54px 0;
+}
+.a{
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+}
+.first__link{
+    background-color: black;
+    color: white;
+}
+.a:hover{
+    background-color: black;
+    color: white;
+}
+.first__link:hover{
+    color: black;
+    background-color: gray;
+}
+.cook{
+    display: flex;
+    align-items:   center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: .05em;
+    margin: 70px;
+
+}
+hr{
+    margin: 0px;
+}
+.cook__h2{
+    margin: 40px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    align-items:   baseline;
+
+}
+.footer__footer{
+    width: 33%;
+}
+.blog__posts{
+    width: 33%;
+    
+}
+.papular__tags{
+    width: 33%;
+    line-height: 3em;
+}
+.inline{
+    display: flex;
+    align-items:   center;
+    padding: 15px;
+    
+
+}
+.inline img {
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+.inline h3{
+    margin: 0;
+}
+.inline hr{
+    margin: 0;
+}
+.first__span{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.next__span{
+    padding: 0 8px;
+    background-color: gray;
+    color: white;
+    font-size: 18px;
+    margin-right: 5px;
+}
+@media screen and (max-width: 600px) {
+    .footer__footer{
+        width: 100%;
+    }
+    .blog__posts{
+        width: 100%;
+        
+    }
+    .papular__tags{
+        width: 100%;
+        line-height: 3em;
+    }
+    .card{
+        width: 100%;
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        /* padding: 10px; */
+    }
+    .main{
+        align-items:   center;
+    }
+}
