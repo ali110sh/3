@@ -13,19 +13,24 @@
     />
   </head>
   <body>
+    <nav class="slidebar" id="slidebar" style="display: none">
+      <a href="#" onclick="backward()" class="slidebar__a">Close menu</a>
+      <a href="#" onclick="backward()" class="slidebar__a">Food</a>
+      <a href="#" onclick="backward()" class="slidebar__a">About</a>
+    </nav>
     <div class="menu">
-      <i class="fa fa-bars fa-2x"></i>
+      <i class="fa fa-bars fa-2x" onclick="forward()"></i>
       <h2>My Food</h2>
       <a href="#" class="menu__link">Mail</a>
     </div>
     <div class="main">
       <div class="card">
-        <div><img src="popsicle.jpg" class="img" /></div>
+        <div><img src="/images/popsicle.jpg" class="img" /></div>
         <h2>All I Need Is a Popsicle</h2>
         <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
       </div>
       <div class="card">
-        <div><img src="steak.jpg" class="img" /></div>
+        <div><img src="/images/steak.jpg" class="img" /></div>
         <h2>Let Me Tell You About This Steak</h2>
         <p>
           Once again, some random text to lorem lorem lorem lorem ipsum text
@@ -33,7 +38,7 @@
         </p>
       </div>
       <div class="card">
-        <div><img src="sandwich (1).jpg" class="img" /></div>
+        <div><img src="/images/sandwich (1).jpg" class="img" /></div>
         <h2>The Perfect Sandwich, A Real NYC Classic</h2>
         <p>
           Just some random text, lorem ipsum text praesent tincidunt ipsum
@@ -41,7 +46,7 @@
         </p>
       </div>
       <div class="card">
-        <div><img src="salmon.jpg" class="img" /></div>
+        <div><img src="/images/salmon.jpg" class="img" /></div>
         <h2>Salmon For Your Skin</h2>
         <p>
           Once again, some random text to lorem lorem lorem lorem ipsum text
@@ -49,24 +54,24 @@
         </p>
       </div>
       <div class="card">
-        <div><img src="wine.jpg" class="img" /></div>
+        <div><img src="/images/wine.jpg" class="img" /></div>
         <h2>Once Again, Robust Wine and Vegetable Pasta</h2>
         <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
       </div>
       <div class="card">
-        <div><img src="cherries.jpg" class="img" /></div>
+        <div><img src="/images/cherries.jpg" class="img" /></div>
         <h2>Cherries, interrupted</h2>
         <p>Lorem ipsum text praesent tincidunt ipsum lipsum. What else?</p>
       </div>
       <div class="card">
-        <div><img src="croissant.jpg" class="img" /></div>
+        <div><img src="/images/croissant.jpg" class="img" /></div>
         <h2>Le French</h2>
         <p>
           Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
         </p>
       </div>
       <div class="card">
-        <div><img src="sandwich.jpg" class="img" /></div>
+        <div><img src="/images/sandwich.jpg" class="img" /></div>
         <h2>The Perfect Sandwich, A Real Classic</h2>
         <p>
           Just some random text, lorem ipsum text praesent tincidunt ipsum
@@ -75,17 +80,17 @@
       </div>
     </div>
     <div class="under-link">
-      <a href="#" class="a">«</a>
-      <a href="#" class="a first__link">1</a>
-      <a href="#" class="a">2</a>
-      <a href="#" class="a">3</a>
-      <a href="#" class="a">4</a>
-      <a href="#" class="a">»</a>
+      <a href="#" class="simple-link">«</a>
+      <a href="#" class="simple-link first__link">1</a>
+      <a href="#" class="simple-link">2</a>
+      <a href="#" class="simple-link">3</a>
+      <a href="#" class="simple-link">4</a>
+      <a href="#" class="simple-link">»</a>
     </div>
     <hr />
-    <div class="cook">
-      <h2 class="cook__h2">About Me, The Food Man</h2>
-      <div><img src="chef.jpg" /></div>
+    <div class="cook-section">
+      <h2 class="cook__titel">About Me, The Food Man</h2>
+      <div class="chef"><img src="/images/chef.jpg" class="chef" /></div>
       <h2>I am Who I Am!</h2>
       <h3>With Passion For Real, Good Food</h3>
       <p>
@@ -100,7 +105,7 @@
     </div>
     <hr />
     <div class="footer">
-      <div class="footer__footer">
+      <div class="footer__inner">
         <h2>FOOTER</h2>
         <p>
           Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
@@ -110,7 +115,7 @@
       <div class="blog__posts">
         <h2>BLOG POSTS</h2>
         <div class="inline">
-          <img src="workshop.jpg" />
+          <img src="/images/workshop.jpg" />
           <h3>
             Lorem <br />
             Sed mattis nunc
@@ -118,7 +123,7 @@
         </div>
         <hr />
         <div class="inline">
-          <img src="GONDOL.jpg" />
+          <img src="/images/GONDOL.jpg" />
           <h3>
             Ipsum <br />
             Praes tinci sed
@@ -144,5 +149,13 @@
         <span class="next__span"> Duck</span>
       </div>
     </div>
+    <script>
+      function forward() {
+        document.getElementById("slidebar").style.display = "block";
+      }
+      function backward() {
+        document.getElementById("slidebar").style.display = "none";
+      }
+    </script>
   </body>
 </html>
